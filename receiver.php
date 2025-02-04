@@ -35,9 +35,9 @@
         $mail->Body    = $_POST['body'];
 
         $mail->send();
-        echo 'Email sent successfully';
+        echo "<script> alert('Email sent successfully..'); </script>"
     } catch (Exception) {
-        echo "Message could not be sent.";
+        echo "<script> alert('Message could not be sent..'); </script>"
     }
 
 ?>
