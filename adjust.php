@@ -35,7 +35,7 @@ if(isset($_POST['submit'])) {
         $mail->Body    = $_POST['body'];
 
         $mail->send();
-        echo 'Email sent successfully';
+        echo "<script> alert('Email sent successfully'); </script>"
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
